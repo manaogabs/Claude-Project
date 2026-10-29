@@ -170,4 +170,4 @@ Prioridade definida: **estoque antes de reservas.** Regras especiais de Natal e 
   - pré-preparos sem insumos.
 - Confirmar se a 55pass exporta vendas por item (formato do arquivo).
 - Definir estoque mínimo e curva de cada insumo.
-- Identidade visual: protótipo usa terracota/areia e Lato, a partir das fichas do bar. Aguarda curadoria.
+- Identidade visual: ver `brand/README.md`. Fontes da marca (PP Monument Extended, Niveau Grotesk) precisam de licença web; o app usa Krona One + Work Sans por enquanto.
