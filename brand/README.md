@@ -20,33 +20,48 @@ Regras:
 
 ## Cores
 
-| Token | Hex | Onde |
-|---|---|---|
-| Terracota | `#983C1C` | Cor principal: menus, cabeçalhos, botões de ação |
-| Terracota claro | `#A04824` | Padrões e superfícies secundárias |
-| Terracota escuro | `#7A2E14` | Hover, texto sobre creme |
-| Cobre (logo) | `#924E2B` | Traço do logo |
-| Creme | `#F0E4CC` | Texto e logo sobre terracota, cabeçalho do site |
-| Areia | `#E4D4C0` | Linhas e divisórias |
-| Fundo | `#F7F1E6` | Fundo das telas |
-| Tinta | `#2E1A12` | Texto principal |
-| Texto secundário | `#6E5646` | Legendas (contraste ≥ 4.5:1 sobre o fundo) |
+Princípio: **superfícies sóbrias, cor nos dados.** O fundo é neutro, os cartões são
+brancos, e a marca aparece nos números, gráficos, botões e no estado ativo.
 
-As cores de status (sucesso, atenção, erro) são separadas da marca. O vermelho de erro (`#B42318`) foi escolhido para não se confundir com o terracota.
+**Terracota (escala tonal da marca)**
+
+| 900 | 700 | 600 (principal) | 500 | 400 | 300 | 200 | 100 |
+|---|---|---|---|---|---|---|---|
+| `#5E2410` | `#7A2E14` | `#983C1C` | `#B4583A` | `#C97B5C` | `#DCA387` | `#EBCBB8` | `#F6E6DC` |
+
+**Areia:** `#B9A58C` · `#CDB89C` · `#E4D4C0` · `#EEE3D3` · `#F7F1E8`
+
+**Neutros:**
+- Fundo `#F3F1EE`
+- Cartão `#FFFFFF`
+- Linhas `#F1EEEA` / `#ECE8E3`
+- Vazio em gráficos `#E2DDD7`
+- Texto secundário `#6F6862`
+- Tinta `#2A2421`
+
+**Como usar nos dados:**
+- Destaque e valor atual: terracota 600.
+- Séries, rankings e mapa de calor: escala 700 → 100, do mais importante ao menos.
+- Comparação e histórico: areia.
+- O que não é dado (fundo de barra, pontos vazios): neutro.
+- Erro (`#B42318`) só para falhas reais, nunca para "dado ruim".
 
 ## Tipografia
 
-Fontes encontradas nos PDFs da marca e o substituto web usado no app:
+**Jost**, uma geométrica leve que conversa com os arcos do logo.
+- Títulos em peso 300, grandes.
+- Texto em 400; ênfase em 500.
+- Nada acima de 600.
+- Rótulos em caixa alta, 11–12px, peso 500, espaçamento 0.2em (eco do "T E R R A Z Z O").
 
-| Papel | Fonte da marca | Substituto web (Google Fonts) |
-|---|---|---|
-| Display (títulos, rótulos em caixa alta e espaçados) | PP Monument Extended | **Krona One** |
-| Texto | Niveau Grotesk | **Work Sans** |
-| Apoio | Helvetica Neue Light | Work Sans 400 |
+As fontes dos materiais impressos são PP Monument Extended e Niveau Grotesk.
+Elas são comerciais e exigem licença web; ficam reservadas para as peças da marca.
 
-As fontes originais são comerciais. Para usá-las no app é preciso licença **web**
-(Pangram Pangram para a Monument; Niveau Grotesk via Adobe Fonts ou fundição).
-Com os arquivos `.woff2` e a licença, basta trocar a família nos tokens.
+## Forma
+
+- Cartões com raio de 24px e painéis com 28px.
+- Botões, filtros e campos em pílula.
+- Navegação ativa em pílula escura.
 
 ## Motivo gráfico
 
