@@ -136,6 +136,7 @@ O app **apenas registra** eventos confirmados (sem funil comercial).
   - Importante: o pop-up trava a tela até a pessoa tocar em "Li e entendi".
 - **Foto:** opcional (chave liga/desliga ao criar).
 - **Sem resposta:** o funcionário só confirma a leitura.
+- **Consultar de novo:** tocando no próprio nome (tablet) ou avatar (celular), o menu do usuário tem **Recados** (com contador de não lidos), que reabre o pop-up. Com mais de um recado válido, o pop-up mostra "1 de N" para navegar. O menu também tem "Trocar usuário" (tablet) e "Sair".
 - **Confirmação de leitura:** a gestora vê quem leu e a que horas. Recados não lidos até o fim do turno entram no resumo diário.
 - **Push com o app fechado:** fica para a fase final, junto com o WhatsApp.
 - **Fase:** 1 (junto com a base de login).
