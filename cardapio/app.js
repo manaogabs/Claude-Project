@@ -1,8 +1,12 @@
 (() => {
-  const { info, setores } = window.DUNA;
+  const { info } = window.DUNA;
+  const setores = window.DUNA.setores.filter((s) => s.grupos.some((g) => g.itens.length));
 
   // Ícones em traço fino, na mesma linguagem linear do logo.
   const ICONES = {
+    entradas: '<path d="M5 17h22a11 8.5 0 0 1-22 0z"/><path d="M11.5 13 13 5.5M16 13V5M20.5 13 19 5.5"/>',
+    sanduiche: '<path d="M6 14.5a10 7.5 0 0 1 20 0z"/><path d="M5 18.5c1.8-1.4 3.7 1.4 5.5 0s3.7 1.4 5.5 0 3.7 1.4 5.5 0 3.7 1.4 5.5 0"/><path d="M6 22.5h20v1a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 6 23.5z"/>',
+    kids: '<path d="M16 5.5l3.1 6.4 7 1-5.1 4.9 1.2 7L16 21.5l-6.2 3.3 1.2-7-5.1-4.9 7-1z"/>',
     brunch: '<path d="M4 23h24"/><path d="M8.5 23a7.5 7.5 0 0 1 15 0"/><path d="M16 8v3.5M7.2 12.2l2.4 2.4M24.8 12.2l-2.4 2.4"/>',
     garden: '<path d="M7 25C7 14 14 7.5 25.5 6.5 25.5 18 19 25 7 25z"/><path d="M7 25 18.5 13.5"/>',
     quente: '<path d="M5 24h22"/><path d="M7 24a9 9 0 0 1 18 0"/><circle cx="16" cy="13" r="1.4"/>',
@@ -41,6 +45,7 @@
           <span class="item__preco">${preco(i.preco)}</span>
         </div>
         ${i.descricao ? `<p class="item__desc">${esc(i.descricao)}</p>` : ""}
+        ${i.nota ? `<p class="item__nota">${esc(i.nota)}</p>` : ""}
         ${i.tags && i.tags.length ? `<p class="item__tags">${i.tags.map((t) => `<span>${esc(t)}</span>`).join("")}</p>` : ""}
       </div>
     </li>`;
@@ -61,7 +66,7 @@
           <h2 class="setor__nome" id="t-${esc(s.id)}">${esc(s.nome)}</h2>
           ${s.descricao ? `<p class="setor__desc">${esc(s.descricao)}</p>` : ""}
         </header>
-        ${s.grupos.map(grupo).join("")}
+        ${s.grupos.filter((g) => g.itens.length).map(grupo).join("")}
       </div>
     </section>`;
 
@@ -76,7 +81,9 @@
     .map((s) => `<li><a href="#${esc(s.id)}">${icone(s.icone)}<span>${esc(s.nome)}</span></a></li>`)
     .join("");
 
-  document.getElementById("chamada").textContent = info.chamada || "";
+  const chamada = document.getElementById("chamada");
+  if (info.chamada) chamada.textContent = info.chamada;
+  else chamada.remove();
 
   if (info.capa && info.capa.src) {
     const capa = document.getElementById("capa-foto");
@@ -131,7 +138,7 @@
     if (!e.isIntersecting) return;
     ativo = null;
     links.forEach((a) => { a.classList.remove("ativo"); a.removeAttribute("aria-current"); });
-  }, { rootMargin: "-120px 0px 0px 0px" }).observe(capa);
+  }, { rootMargin: "-180px 0px 0px 0px" }).observe(capa);
 
   // Entrada suave dos setores.
   if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {

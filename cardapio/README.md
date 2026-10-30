@@ -5,8 +5,10 @@ Site estático (HTML, CSS e JS, sem build) com a identidade de [`../brand`](../b
 ## Editar o cardápio
 
 Todo o conteúdo fica em **`dados.js`**: setores, grupos, itens, preços, horários,
-endereço e contatos. Edite esse arquivo e o site se monta sozinho. Os itens que
-estão lá agora são marcadores de posição.
+endereço e contatos. Edite esse arquivo e o site se monta sozinho.
+
+`conteudo-original.md` guarda o texto do cardápio do Adobe Express como veio, sem
+revisão. Setor sem itens (hoje, Brunch e Bebidas) fica escondido até ser preenchido.
 
 ## Fotos
 
