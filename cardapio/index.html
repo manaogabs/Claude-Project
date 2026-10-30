@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cardápio · Duna Terrazzo</title>
+  <meta name="description" content="Cardápio do Duna Terrazzo: brunch, garden, pratos, confeitaria, cafeteria e bar.">
+  <meta name="theme-color" content="#F7F1E8">
+  <meta property="og:title" content="Cardápio · Duna Terrazzo">
+  <meta property="og:description" content="Brunch, garden, pratos, confeitaria, cafeteria e bar.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="duna" viewBox="0 0 812.491 192.55">
+        <g fill="none" stroke="currentColor" stroke-width="10" stroke-miterlimit="10">
+        <path stroke-linecap="butt" stroke-linejoin="miter" d="M 0.00175842 -0.000239139 L 0.00175842 -182.550875 L 182.548479 -182.550875 C 182.548479 -81.729863 100.818855 -0.000239139 0.00175842 -0.000239139 Z M 0.00175842 -0.000239139 " transform="matrix(0.997668, 0, 0, -0.997668, 5.681839, 4.988043)"/>
+        <path stroke-linecap="square" stroke-linejoin="miter" d="M 0.000379596 -0.000239139 C 0.000379596 -100.821252 81.730003 -182.550875 182.551016 -182.550875 L 182.551016 -0.000239139 " transform="matrix(0.997668, 0, 0, -0.997668, 187.550403, 4.988043)"/>
+        <path stroke-linecap="square" stroke-linejoin="miter" d="M -0.00110363 -0.000575338 C -0.00110363 100.820437 81.72852 182.550061 182.549533 182.550061 L 182.549533 -0.000575338 " transform="matrix(0.997668, 0, 0, -0.997668, 624.176882, 187.112707)"/>
+        <path stroke-linecap="butt" stroke-linejoin="miter" d="M 0.00135353 -0.00136117 L 179.431433 -0.00136117 " transform="matrix(0.997668, 0, 0, -0.997668, 627.287712, 153.42833)"/>
+        <path stroke-linecap="square" stroke-linejoin="miter" d="M 0.000502519 -0.000575338 C 0.000502519 100.820437 -81.729121 182.550061 -182.550134 182.550061 L -182.550134 -0.000575338 " transform="matrix(0.997668, 0, 0, -0.997668, 592.452624, 187.112707)"/>
+        <path stroke-linecap="square" stroke-linejoin="miter" d="M 0.000502519 -0.000239139 L 0.000502519 -182.550875 " transform="matrix(0.997668, 0, 0, -0.997668, 592.452624, 4.988043)"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="pular" href="#cardapio">Pular para o cardápio</a>
+
+  <header class="topo" id="topo">
+    <div class="topo__barra">
+      <a class="topo__logo" href="#inicio" aria-label="Duna Terrazzo, início">
+        <svg viewBox="0 0 812.491 192.55" aria-hidden="true"><use href="#duna"/></svg>
+      </a>
+      <span class="topo__rotulo">Cardápio</span>
+    </div>
+    <nav class="menu" aria-label="Setores do cardápio">
+      <ul class="menu__lista" id="menu"></ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="capa" id="inicio">
+      <div class="capa__motivo capa__motivo--esq" aria-hidden="true"></div>
+      <div class="capa__motivo capa__motivo--dir" aria-hidden="true"></div>
+      <div class="capa__conteudo">
+        <h1 class="capa__logo">
+          <svg viewBox="0 0 812.491 192.55" role="img" aria-label="Duna"><use href="#duna"/></svg>
+          <span class="capa__terrazzo">Terrazzo</span>
+        </h1>
+        <p class="rotulo capa__titulo">Cardápio</p>
+        <p class="capa__chamada" id="chamada"></p>
+        <ul class="capa__setores" id="atalhos" aria-label="Ir para um setor"></ul>
+      </div>
+      <figure class="capa__foto" id="capa-foto" hidden></figure>
+    </section>
+
+    <div class="cardapio" id="cardapio"></div>
+  </main>
+
+  <footer class="rodape" id="rodape">
+    <svg class="rodape__logo" viewBox="0 0 812.491 192.55" aria-hidden="true"><use href="#duna"/></svg>
+    <p class="rodape__terrazzo">Terrazzo</p>
+    <div class="rodape__info" id="info"></div>
+    <ul class="rodape__obs" id="obs"></ul>
+  </footer>
+
+  <a class="voltar" href="#inicio" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6"/></svg>
+  </a>
+
+  <script src="dados.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
