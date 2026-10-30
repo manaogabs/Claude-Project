@@ -123,6 +123,23 @@ O app **apenas registra** eventos confirmados (sem funil comercial).
 - Checklists de abertura e fechamento por setor.
 - **Fora do app:** ponto eletrônico (usar sistema certificado), folha de pagamento e rateio de gorjeta.
 
+### 8.1 Recados para a equipe
+
+- **Quem envia:** a gestora para qualquer pessoa. O Chef e o Líder de Bar e Salão enviam só para a própria equipe.
+- **Destinatário:** uma pessoa, um setor ou todos.
+- **Onde aparece:**
+  - Recado para uma pessoa: pop-up quando ela abre o app no celular ou digita o PIN no tablet.
+  - Recado para um setor: aviso fixo na tela do tablet do setor até alguém confirmar.
+- **Validade:** só no dia escolhido, ou num período (de/até). Itens recorrentes ficam nos checklists.
+- **Prioridade:**
+  - Normal: o pop-up pode ser fechado ("Ler depois") e o recado fica em *Meus recados*.
+  - Importante: o pop-up trava a tela até a pessoa tocar em "Li e entendi".
+- **Foto:** opcional (chave liga/desliga ao criar).
+- **Sem resposta:** o funcionário só confirma a leitura.
+- **Confirmação de leitura:** a gestora vê quem leu e a que horas. Recados não lidos até o fim do turno entram no resumo diário.
+- **Push com o app fechado:** fica para a fase final, junto com o WhatsApp.
+- **Fase:** 1 (junto com a base de login).
+
 ## 9. CRM / pós-venda
 
 - Base: clientes que reservam (site, WhatsApp, eventos). Futuro: QR Code na mesa para captar quem não reservou.
@@ -155,7 +172,7 @@ Indicadores:
 
 | Fase | Prazo | Escopo |
 |---|---|---|
-| **1** | ~10/12 | Base (login, perfis, setores, PIN) · **Receitas** · **Estoque ABC + contagem** · **Compras com leitura de nota** · Cadastro de funcionários |
+| **1** | ~10/12 | Base (login, perfis, setores, PIN) · **Receitas** · **Estoque ABC + contagem** · **Compras com leitura de nota** · Cadastro de funcionários · **Recados para a equipe** |
 | **2** | janeiro | Reservas (site, calendário, check-in, exceções) · Escala + checklists · Importação 55pass + CMV teórico × real |
 | **3** | fev/mar | Eventos · Dashboard completo · Resumo por e-mail · CRM + WhatsApp |
 
@@ -170,4 +187,4 @@ Prioridade definida: **estoque antes de reservas.** Regras especiais de Natal e 
   - pré-preparos sem insumos.
 - Confirmar se a 55pass exporta vendas por item (formato do arquivo).
 - Definir estoque mínimo e curva de cada insumo.
-- Identidade visual: ver `brand/README.md`. Fontes da marca (PP Monument Extended, Niveau Grotesk) precisam de licença web; o app usa Krona One + Work Sans por enquanto.
+- Identidade visual: ver `brand/README.md`. Fontes da marca (PP Monument Extended, Niveau Grotesk) precisam de licença web; o app usa Jost.
