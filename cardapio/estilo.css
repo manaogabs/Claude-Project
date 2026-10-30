@@ -196,6 +196,7 @@ img { display: block; max-width: 100%; }
   }
   .topo__barra { padding: 0; height: auto; justify-content: flex-start; flex: none; }
   .topo__logo svg { width: 92px; }
+  .topo__rotulo { display: none; }
   .menu { flex: 1; min-width: 0; }
   .menu__lista { padding: 6px 4px 6px 24px; gap: 4px; }
   .menu__lista li:first-child { margin-left: auto; }

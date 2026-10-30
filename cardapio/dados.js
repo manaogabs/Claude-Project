@@ -135,21 +135,133 @@ window.DUNA = {
       }],
     },
     {
-      // O original traz este setor só em imagem: preencha os itens para ele aparecer.
       id: "brunch",
       nome: "Brunch",
       icone: "brunch",
       descricao: "Disponível até as 18h.",
       foto: { src: "", alt: "" },
-      grupos: [{ titulo: "", itens: [] }],
+      grupos: [
+        {
+          titulo: "Toasts",
+          itens: [
+            { nome: "Avocado Toast", preco: 39, descricao: "Pão de fermentação natural, creme de avocado, ovo pochê, ricota, pimenta calabresa e flor de sal." },
+            { nome: "Salmão Toast", preco: 49, descricao: "Pão de fermentação natural, creme de avocado, salmão gravlax, sour cream, picles de cebola roxa e raspas de limão-siciliano." },
+            { nome: "Parma Trufado", preco: 42, descricao: "Pão de fermentação natural, pesto, creme de ricota, presunto parma, nuts de pistache e mel trufado." },
+            { nome: "Cogumelos", preco: 39, descricao: "Pão de fermentação natural, mix de cogumelos, creme de ricota e pimenta calabresa, finalizado com redução de balsâmico." },
+            { nome: "Rouge", preco: 39, descricao: "Pão de fermentação natural tostado, queijo brie levemente derretido, bacon crocante e redução de frutas vermelhas." },
+          ],
+        },
+        {
+          titulo: "Bagel",
+          itens: [
+            { nome: "Breakfast Bagel", preco: 36, descricao: "Bagel com gergelim, cream cheese, ovos rosalete, queijo e bacon." },
+          ],
+        },
+        {
+          titulo: "Doces",
+          itens: [
+            { nome: "French Toast", preco: 38, descricao: "Brioche na manteiga, creme de natas, calda de frutas vermelhas frescas e pistache tostado." },
+            { nome: "French Toast Tiramisu", preco: 38, descricao: "Brioche na manteiga, mascarpone, cacau 70% e creme de espresso." },
+            { nome: "Bolo Triplo Chocolate", preco: 49, descricao: "Bolo de chocolate nobre com tripla camada de recheio: chocolate 70%, chocolate ao leite e chocolate branco." },
+          ],
+        },
+      ],
     },
     {
-      // O original traz este setor só em imagem: preencha os itens para ele aparecer.
+      id: "cafeteria",
+      nome: "Cafeteria",
+      icone: "cafe",
+      foto: { src: "", alt: "" },
+      grupos: [
+        {
+          titulo: "Bebidas quentes",
+          itens: [
+            { nome: "Cappuccino", preco: 18 },
+            { nome: "Espresso Simples", preco: 8 },
+            { nome: "Espresso Duplo", preco: 12 },
+            { nome: "Latte", preco: 16 },
+            { nome: "Matcha Latte", preco: 22 },
+            { nome: "Chocolate Quente", preco: 26 },
+          ],
+        },
+        {
+          titulo: "Iced",
+          itens: [
+            { nome: "Iced Latte", preco: 22 },
+            { nome: "Caramelo Salgado Latte", preco: 22 },
+            { nome: "Matcha Latte", preco: 24 },
+            { nome: "Strawberry Matcha", preco: 26 },
+          ],
+        },
+        {
+          titulo: "Iced zero açúcar",
+          itens: [
+            { nome: "Iced Latte", preco: 28 },
+            { nome: "Matcha Latte", preco: 28 },
+          ],
+        },
+      ],
+    },
+    {
       id: "bebidas",
       nome: "Bebidas",
-      icone: "bar",
+      icone: "sem-alcool",
+      descricao: "Smoothies, sucos, refrigerantes e água.",
       foto: { src: "", alt: "" },
-      grupos: [{ titulo: "", itens: [] }],
+      grupos: [
+        {
+          titulo: "Smoothies zero açúcar",
+          itens: [
+            { nome: "Frutas Vermelhas", preco: 38, descricao: "Frutas vermelhas, iogurte grego, leite, xarope de baunilha zero, proteína de colágeno e creme de coco." },
+            { nome: "Tropical", preco: 38, descricao: "Manga, maracujá, leite, iogurte grego, xarope de baunilha zero e proteína de colágeno." },
+            { nome: "Blue", preco: 38, descricao: "Abacaxi, banana, iogurte grego, leite de coco, xarope de baunilha zero e spirulina azul." },
+          ],
+        },
+        {
+          titulo: "Sucos",
+          itens: [
+            { nome: "Sucos Naturais", preco: 18, descricao: "Laranja, abacaxi, limão, morango e maracujá.", nota: "Com duas frutas + R$ 6" },
+            { nome: "Abacaxi com Hortelã", preco: 26, descricao: "Abacaxi, água de coco, hortelã, limão e eletrólitos Jungle.", tags: ["Funcional Jungle"] },
+            { nome: "Morango com Gengibre", preco: 26, descricao: "Morango, água de coco, gengibre, limão e eletrólitos Jungle.", tags: ["Funcional Jungle"] },
+          ],
+        },
+        {
+          titulo: "Refrigerantes e água",
+          itens: [
+            { nome: "Refrigerante", preco: 10, descricao: "Coca-Cola, Coca-Cola Zero, Guaraná, Guaraná Zero, Sprite e Sprite Zero." },
+            { nome: "Água com e sem gás", preco: 7 },
+          ],
+        },
+      ],
+    },
+    {
+      id: "bar",
+      nome: "Bar",
+      icone: "bar",
+      descricao: "Drinks e cervejas.",
+      foto: { src: "", alt: "" },
+      grupos: [
+        {
+          titulo: "Drinks",
+          itens: [
+            { nome: "Negroni", preco: 42, descricao: "Gin, Campari, vermute e rodela de laranja." },
+            { nome: "Aperol Spritz", preco: 39, descricao: "Aperol, prosecco, água com gás e laranja-baía." },
+            { nome: "Hugo Spritz", preco: 42, descricao: "Licor de flor de sabugueiro, prosecco, água com gás, hortelã e limão-siciliano." },
+            { nome: "Limoncello Spritz", preco: 42, descricao: "Limoncello, prosecco e água com gás." },
+            { nome: "Moscow Mule", preco: 39, descricao: "Vodka, limão, xarope de capim-santo e espuma de gengibre." },
+            { nome: "Gin Tônica", preco: 38, descricao: "Gin, suco de limão-siciliano e água tônica." },
+            { nome: "Fitzgerald", preco: 42, descricao: "Gin, suco de limão fresco, xarope de açúcar e angostura." },
+            { nome: "Cosmopolitan", preco: 39, descricao: "Vodka, Cointreau, suco de limão-siciliano e cranberry." },
+          ],
+        },
+        {
+          titulo: "Cervejas",
+          itens: [
+            { nome: "Heineken e Heineken Zero", preco: 17 },
+            { nome: "Corona e Corona Zero", preco: 17 },
+          ],
+        },
+      ],
     },
     {
       id: "vinhos",

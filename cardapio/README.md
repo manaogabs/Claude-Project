@@ -8,7 +8,7 @@ Todo o conteúdo fica em **`dados.js`**: setores, grupos, itens, preços, horár
 endereço e contatos. Edite esse arquivo e o site se monta sozinho.
 
 `conteudo-original.md` guarda o texto do cardápio do Adobe Express como veio, sem
-revisão. Setor sem itens (hoje, Brunch e Bebidas) fica escondido até ser preenchido.
+revisão. Setor sem itens fica escondido até ser preenchido.
 
 ## Fotos
 
